@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bittu Mobiles Wholesale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* Hide scrollbar for clean UI */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* Theme Variables (RGB format for Tailwind opacity support) */
+      :root {
+        /* Default Blue Theme */
+        --brand-blue: 30 64 175;      /* #1E40AF (Blue-800) */
+        --brand-dark: 15 23 42;       /* #0F172A (Slate-900) */
+        --brand-light: 248 250 252;   /* #F8FAFC (Slate-50) */
+        --brand-accent: 59 130 246;   /* #3B82F6 (Blue-500) */
+      }
+
+      [data-theme='emerald'] {
+        --brand-blue: 4 120 87;       /* #047857 (Emerald-700) */
+        --brand-dark: 2 44 34;        /* #022c22 (Emerald-950) */
+        --brand-light: 236 253 245;   /* #ecfdf5 (Emerald-50) */
+        --brand-accent: 16 185 129;   /* #10b981 (Emerald-500) */
+      }
+
+      [data-theme='purple'] {
+        --brand-blue: 109 40 217;     /* #6d28d9 (Violet-700) */
+        --brand-dark: 46 16 101;      /* #2e1065 (Violet-950) */
+        --brand-light: 245 243 255;   /* #f5f3ff (Violet-50) */
+        --brand-accent: 139 92 246;   /* #8b5cf6 (Violet-500) */
+      }
+
+      [data-theme='orange'] {
+        --brand-blue: 194 65 12;      /* #c2410c (Orange-700) */
+        --brand-dark: 67 20 7;        /* #431407 (Orange-950) */
+        --brand-light: 255 247 237;   /* #fff7ed (Orange-50) */
+        --brand-accent: 249 115 22;   /* #f97316 (Orange-500) */
+      }
+
+      [data-theme='rose'] {
+        --brand-blue: 190 18 60;      /* #be123c (Rose-700) */
+        --brand-dark: 76 5 25;        /* #4c0519 (Rose-950) */
+        --brand-light: 255 241 242;   /* #fff1f2 (Rose-50) */
+        --brand-accent: 244 63 94;    /* #f43f5e (Rose-500) */
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                blue: 'rgb(var(--brand-blue) / <alpha-value>)',
+                dark: 'rgb(var(--brand-dark) / <alpha-value>)',
+                light: 'rgb(var(--brand-light) / <alpha-value>)',
+                accent: 'rgb(var(--brand-accent) / <alpha-value>)',
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
